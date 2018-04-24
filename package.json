@@ -1,0 +1,20 @@
+{
+  "name": "backbone-breakdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Michael Gallagher <mike@april4th.ie>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootbox": "^4.4.0",
+    "bootstrap": "^4.1.0",
+    "express": "^4.16.3",
+    "ncp": "^2.0.0",
+    "nedb": "^1.8.0",
+    "todomvc": "^0.1.1"
+  }
+}

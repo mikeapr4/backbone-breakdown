@@ -1,0 +1,37 @@
+<!-- 1. Comment unnecessary script -->
+<!--script src="bower_components/todomvc-common/base.js"></script-->
+
+<!-- 2. HEAD Additional Stylesheets -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<style type="text/css">.bootbox .modal-header { display: block; }</style>
+
+<!-- 3. Additional scripts (after jQuery) -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/bootbox/bootbox.min.js"></script>
+
+<!-- 4. Body style -->
+<body style="margin: 0 auto"></body>
+
+<!-- 5. Item Template -->
+<script type="text/template" id="item-template">
+    <div class="view">
+        <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
+        <!--<label><%- title %></label>-->
+        <label><%- title %> [<%- duedate %>]</label>
+        <button class="destroy"></button>
+    </div>
+    <!--<input class="edit" value="<%- title %>">-->
+</script>
+
+<!-- 6. New Item Edit Template -->
+<script type="text/template" id="item-edit-template">
+    <div>
+        <input class="edit title" value="<%- title %>">
+        <input class="edit duedate" type="date" value="<%- duedate %>">
+        <button class="btn save" style="margin-left: 43px;">Save</button>
+        <button class="btn cancel">Cancel</button>
+    </div>
+</script>
+
+<!-- 7. Item Edit View script -->
+<script src="js/views/todo-edit-view.js"></script>
